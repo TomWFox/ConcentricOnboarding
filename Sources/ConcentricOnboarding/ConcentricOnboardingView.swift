@@ -142,9 +142,9 @@ public struct ConcentricOnboardingView : View {
             .offset(y: 300)
 
             currentPages()
-                .offset(y: -50)
+                .offset(y: -30)
         }
-        //.edgesIgnoringSafeArea(.vertical)
+        .edgesIgnoringSafeArea(.vertical)
         .onReceive(timer) { _ in
             if !self.isAnimating.value {
                 return
